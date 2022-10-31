@@ -25,8 +25,8 @@ public class myController {
     @RequestMapping("/nexthalaman")
     public String next(
             @RequestParam(value = "varA") String isipertama,
-            @RequestParam(value="varB") String isikedua,
-            @RequestParam(value="foto") MultipartFile foto,
+            @RequestParam(value= "varB") String isikedua,
+            @RequestParam(value= "foto") MultipartFile foto,
             Model kurir
     )throws IOException{
         byte[] img = foto.getBytes();
