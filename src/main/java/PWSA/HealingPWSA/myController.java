@@ -24,8 +24,8 @@ public class myController {
     
     @RequestMapping("/nexthalaman")
     public String next(
-            @RequestParam(value = "varA") String isipertama,
-            @RequestParam(value= "varB") String isikedua,
+            @RequestParam(value = "nama") String isipertama,
+            @RequestParam(value= "alamat") String isikedua,
             @RequestParam(value= "foto") MultipartFile foto,
             Model kurir
     )throws IOException{
