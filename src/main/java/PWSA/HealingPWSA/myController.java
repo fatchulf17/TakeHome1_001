@@ -22,25 +22,6 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 public class myController {
     
-    @RequestMapping("/hello")
-    @ResponseBody
-    public String hai(@RequestParam(value="varA") String isipertama,@RequestParam(value="varB") String isikedua, @RequestParam(value="foto") String foto)
-    
-    {
-        String rslt ="";
-        if (isipertama.equals("ami") &&isikedua.equals("tiara")){
-            rslt = "couple";
-            
-        }else if (isipertama.equals("ami") &&isikedua.equals("ira")){
-            rslt = "family";
-        }else if (isipertama.equals("ami") &&isikedua.equals("fajri")){
-            rslt = "??????????";
-        }else{
-            rslt = "ISI GAES........";
-        }       
-        return rslt;
-    } 
-    
     @RequestMapping("/nexthalaman")
     public String next(
             @RequestParam(value = "varA") String isipertama,
